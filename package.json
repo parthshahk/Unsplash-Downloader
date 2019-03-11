@@ -1,0 +1,17 @@
+{
+  "name": "unsplash-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^4.2.6",
+    "isomorphic-fetch": "^2.2.1",
+    "request": "^2.88.0",
+    "unsplash-js": "^5.0.0"
+  }
+}
