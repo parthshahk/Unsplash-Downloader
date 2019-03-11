@@ -44,7 +44,7 @@ function fetchPhotos(total){
 		  })
 		  .then(json => {
 			json.forEach(el => {
-				photos.push(el.urls.thumb);			// raw || full || regular || small || thumb
+				photos.push(el.urls.full);			// raw || full || regular || small || thumb
 			});
 			if(photos.length == totalPhotos){
 				startDownloading();
