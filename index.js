@@ -22,7 +22,7 @@ const unsplash = new Unsplash({
   	secret: keys.secret
 });
 
-var collection = 3516782;
+var collection = 1612966;
 var totalPhotos;
 unsplash.collections.getCollection(collection)
   	.then(response=>{
@@ -38,7 +38,7 @@ function fetchPhotos(total){
 
 	for(var i=0; i<Math.ceil(total/10); i++){
 
-		unsplash.collections.getCollectionPhotos(collection, i)
+		unsplash.collections.getCollectionPhotos(collection, i+1)
 		.then(response=>{
 			return response.json();
 		  })
