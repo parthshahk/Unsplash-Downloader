@@ -22,7 +22,7 @@ const unsplash = new Unsplash({
   	secret: keys.secret
 });
 
-var collection = 1612966;
+var collection = process.argv[2];	// command line argument no 3 - node index <id>
 var totalPhotos;
 unsplash.collections.getCollection(collection)
   	.then(response=>{
